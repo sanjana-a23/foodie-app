@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Burger Town - Menu</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 50px auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: gray;
+            margin-bottom: 40px;
+        }
+
+        .menu-card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .item-info h3 {
+            margin: 0;
+        }
+
+        .item-info p {
+            margin: 5px 0 0;
+            color: gray;
+            font-size: 14px;
+        }
+
+        .price-section {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .price {
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .add-btn {
+            background-color: #ff4d4d;
+            border: none;
+            padding: 8px 14px;
+            color: white;
+            border-radius: 6px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .add-btn:hover {
+            background-color: #e63e3e;
+        }
+
+        .back-link {
+            display: block;
+            margin-bottom: 20px;
+            color: #ff4d4d;
+            text-decoration: none;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <a href="restaurants.html" class="back-link">← Back to Restaurants</a>
+
+    <h1>Burger Town</h1>
+    <div class="subtitle">Fresh & Juicy Burgers</div>
+
+    <div class="menu-card">
+        <div class="item-info">
+            <h3>Classic Burger</h3>
+            <p>Grilled patty with fresh lettuce & sauce</p>
+        </div>
+        <div class="price-section">
+            <span class="price">₹120</span>
+            <a href="cart.html" class="add-btn">Add</a>
+        </div>
+    </div>
+
+    <div class="menu-card">
+        <div class="item-info">
+            <h3>Cheese Burger</h3>
+            <p>Loaded with extra melted cheese</p>
+        </div>
+        <div class="price-section">
+            <span class="price">₹150</span>
+            <a href="cart.html" class="add-btn">Add</a>
+        </div>
+    </div>
+
+    <div class="menu-card">
+        <div class="item-info">
+            <h3>Veggie Burger</h3>
+            <p>Crispy veg patty with spicy mayo</p>
+        </div>
+        <div class="price-section">
+            <span class="price">₹110</span>
+            <a href="cart.html" class="add-btn">Add</a>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Cart - Foodie</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 50px auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .cart-card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .price {
+            font-weight: bold;
+        }
+
+        .summary {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            margin-top: 30px;
+        }
+
+        .summary-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .total {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .checkout-btn {
+            width: 100%;
+            margin-top: 20px;
+            padding: 12px;
+            background-color: #ff4d4d;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .checkout-btn:hover {
+            background-color: #e63e3e;
+        }
+
+        .back-link {
+            display: block;
+            margin-bottom: 20px;
+            color: #ff4d4d;
+            text-decoration: none;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <a href="menu.html" class="back-link">← Back to Menu</a>
+
+    <h1>Your Cart</h1>
+
+    <div class="cart-card">
+        <span>Classic Burger</span>
+        <span class="price">₹120</span>
+    </div>
+
+    <div class="cart-card">
+        <span>Cheese Burger</span>
+        <span class="price">₹150</span>
+    </div>
+
+    <div class="summary">
+        <div class="summary-row">
+            <span>Subtotal</span>
+            <span>₹270</span>
+        </div>
+        <div class="summary-row">
+            <span>Delivery Fee</span>
+            <span>₹30</span>
+        </div>
+        <div class="summary-row total">
+            <span>Total</span>
+            <span>₹300</span>
+        </div>
+
+        <a href="checkout.html">
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </a>
+    </div>
+
+</div>
+
+</body>
+</html>

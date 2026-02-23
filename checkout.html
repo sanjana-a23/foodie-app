@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Checkout - Foodie</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 50px auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .form-card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+
+        .confirm-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #ff4d4d;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .confirm-btn:hover {
+            background-color: #e63e3e;
+        }
+
+        .back-link {
+            display: block;
+            margin-bottom: 20px;
+            color: #ff4d4d;
+            text-decoration: none;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <a href="cart.html" class="back-link">← Back to Cart</a>
+
+    <h1>Checkout</h1>
+
+    <div class="form-card">
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name">
+
+        <label>Delivery Address</label>
+        <input type="text" placeholder="Enter your address">
+
+        <label>Phone Number</label>
+        <input type="text" placeholder="Enter your phone number">
+
+        <label>Payment Method</label>
+        <select>
+            <option>Cash on Delivery</option>
+            <option>Credit Card</option>
+            <option>UPI</option>
+        </select>
+
+        <a href="success.html">
+    <button class="confirm-btn">Confirm Order</button>
+</a>
+    </div>
+
+</div>
+
+</body>
+</html>
